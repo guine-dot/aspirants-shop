@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light Theme */
+body.theme-light {
+  @apply bg-white text-gray-900;
+}
+
+/* Dark Theme */
+body.theme-dark {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Sakura Theme */
+body.theme-sakura {
+  @apply bg-pink-50 text-pink-900;
+}
+
+/* Neon Theme */
+body.theme-neon {
+  @apply bg-black text-white;
+}
+
+/* Emerald Theme */
+body.theme-emerald {
+  @apply bg-emerald-50 text-emerald-900;
+}
+
+/* Midnight Theme */
+body.theme-midnight {
+  @apply bg-slate-900 text-slate-100;
+}
+
+/* Ocean Theme */
+body.theme-ocean {
+  @apply bg-sky-900 text-sky-50;
+}
+
+/* Golden Theme */
+body.theme-golden {
+  @apply bg-amber-50 text-amber-900;
+}
+
+/* Gradient Theme */
+body.theme-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  @apply text-white;
+}
+
+.theme-container {
+  transition: all 0.3s ease;
+}
